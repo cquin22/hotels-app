@@ -1,0 +1,36 @@
+@import "../../../../styles/variables";
+.panel{
+  background-color: white;
+  padding: 12px;
+}
+
+.global-title{
+  h3{
+    font-weight: bold;
+    font-size: 16px;
+    color: #444;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+.box-basic-search{
+  h4{
+    margin: 0;
+    color: $primary-color;
+    font-size: 14px;
+  }
+}
+
+
+.star-block{
+  span{
+    color: #ffc427;
+  }
+}
+
+
+@media screen and (max-width: $sm) {
+
+}

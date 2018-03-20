@@ -1,0 +1,123 @@
+<div class="panel global-title">
+  <h3>Filtros</h3>
+</div>
+
+<div class="panel box-basic-search mg-t-15">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="filter-title mg-t-10 mg-b-10">
+        <h4><span class="icon-search"></span> Nombre del hotel</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="box-input  mg-t-10 mg-b-10">
+    <div class="row middle-xs">
+      <div class="col-xs-8">
+        <input [(ngModel)]="searchWord" class="classic-input" type="text" placeholder="Encuentra el producto ideal">
+      </div>
+      <div class="col-xs-4">
+        <button (click)="searchHotel()" class="app-btn">
+          Aceptar
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel box-basic-search mg-t-15">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="filter-title mg-t-10 mg-b-10">
+        <h4><span class="icon-search"></span> Estrellas</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="row middle-xs">
+    <div class="col-xs-1">
+      <mz-checkbox-container>
+        <input mz-checkbox
+               id="five"
+               filledIn="true"
+               [(ngModel)]="starsModel.five.value"
+               (change)="addStarForSearch('five')"
+               type="checkbox">
+      </mz-checkbox-container>
+    </div>
+    <div class="col-xs-11">
+      <div class="star-block">
+        <span  *ngFor="let number of [0,1,2,3,4]" class="icon-star"></span>
+      </div>
+    </div>
+  </div>
+  <div class="row middle-xs">
+    <div class="col-xs-1">
+      <mz-checkbox-container>
+        <input mz-checkbox
+               filledIn="true"
+               [(ngModel)]="starsModel.four.value"
+               (change)="addStarForSearch('four')"
+               id="four"
+               type="checkbox">
+      </mz-checkbox-container>
+    </div>
+    <div class="col-xs-11">
+      <div class="star-block">
+        <span  *ngFor="let number of [0,1,2,3]" class="icon-star"></span>
+      </div>
+    </div>
+  </div>
+  <div class="row middle-xs">
+    <div class="col-xs-1">
+      <mz-checkbox-container>
+        <input mz-checkbox
+               id="three"
+               [(ngModel)]="starsModel.three.value"
+               (change)="addStarForSearch('three')"
+               filledIn="true"
+               type="checkbox">
+      </mz-checkbox-container>
+    </div>
+    <div class="col-xs-11">
+      <div class="star-block">
+        <span  *ngFor="let number of [0,1,2]" class="icon-star"></span>
+      </div>
+    </div>
+  </div>
+  <div class="row middle-xs">
+    <div class="col-xs-1">
+      <mz-checkbox-container>
+        <input mz-checkbox
+               id="two"
+               [(ngModel)]="starsModel.two.value"
+               (change)="addStarForSearch('two')"
+               filledIn="true"
+               type="checkbox">
+      </mz-checkbox-container>
+    </div>
+    <div class="col-xs-11">
+      <div class="star-block">
+        <span  *ngFor="let number of [0,1]" class="icon-star"></span>
+      </div>
+    </div>
+  </div>
+  <div class="row middle-xs">
+    <div class="col-xs-1">
+      <mz-checkbox-container>
+        <input mz-checkbox
+               id="one"
+               [(ngModel)]="starsModel.one.value"
+               (change)="addStarForSearch('one')"
+               filledIn="true"
+               type="checkbox">
+      </mz-checkbox-container>
+    </div>
+    <div class="col-xs-11">
+      <div class="star-block">
+        <span  *ngFor="let number of [0]" class="icon-star"></span>
+      </div>
+    </div>
+  </div>
+</div>

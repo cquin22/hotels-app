@@ -1,0 +1,145 @@
+@import "variables";
+
+@font-face {
+  font-family: 'hotels';
+  src:  url('#{$icomoon-font-path}/hotels.eot?m3xh4h');
+  src:  url('#{$icomoon-font-path}/hotels.eot?m3xh4h#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/hotels.ttf?m3xh4h') format('truetype'),
+    url('#{$icomoon-font-path}/hotels.woff?m3xh4h') format('woff'),
+    url('#{$icomoon-font-path}/hotels.svg?m3xh4h#hotels') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'hotels' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@function unicode($str) {
+  @return unquote("\"") + $str + unquote("\"");
+}
+
+.icon-search {
+  &:before {
+    content: unicode($icon-search); 
+  }
+}
+.icon-star {
+  &:before {
+    content: unicode($icon-star); 
+  }
+}
+.icon-bathrobes {
+  &:before {
+    content: unicode($icon-bathrobes);     
+    color: #59595c;
+  }
+}
+.icon-bathtub {
+  &:before {
+    content: unicode($icon-bathtub);     
+    color: #595858;
+  }
+}
+.icon-beach {
+  &:before {
+    content: unicode($icon-beach);     
+    color: #595858;
+  }
+}
+.icon-beach-pool-facilities {
+  &:before {
+    content: unicode($icon-beach-pool-facilities);     
+    color: #595858;
+  }
+}
+.icon-business-center {
+  &:before {
+    content: unicode($icon-business-center);     
+    color: #595858;
+  }
+}
+.icon-children-club {
+  &:before {
+    content: unicode($icon-children-club);     
+    color: #595858;
+  }
+}
+.icon-coffe-maker {
+  &:before {
+    content: unicode($icon-coffe-maker);     
+    color: #595858;
+  }
+}
+.icon-deep-soaking-bathtub {
+  &:before {
+    content: unicode($icon-deep-soaking-bathtub);     
+    color: #595858;
+  }
+}
+.icon-fitness-center {
+  &:before {
+    content: unicode($icon-fitness-center);     
+    color: #5a5a5d;
+  }
+}
+.icon-garden {
+  &:before {
+    content: unicode($icon-garden);     
+    color: #595858;
+  }
+}
+.icon-kitchen-facilities {
+  &:before {
+    content: unicode($icon-kitchen-facilities);     
+    color: #595858;
+  }
+}
+.icon-newspaper {
+  &:before {
+    content: unicode($icon-newspaper);     
+    color: #595858;
+  }
+}
+.icon-nightclub {
+  &:before {
+    content: unicode($icon-nightclub);     
+    color: #59595c;
+  }
+}
+.icon-restaurant {
+  &:before {
+    content: unicode($icon-restaurant);     
+    color: #595858;
+  }
+}
+.icon-safety-box {
+  &:before {
+    content: unicode($icon-safety-box);     
+    color: #59595c;
+  }
+}
+.icon-separate-bredroom {
+  &:before {
+    content: unicode($icon-separate-bredroom);     
+    color: #595858;
+  }
+}
+.icon-sheets {
+  &:before {
+    content: unicode($icon-sheets);     
+    color: #59595c;
+  }
+}
+

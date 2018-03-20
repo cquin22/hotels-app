@@ -1,0 +1,27 @@
+<div class="box-hotel animated fadeIn">
+  <div class="row top-xs">
+    <div class="col-xs-12 col-sm-12 col-md-4 image">
+      <div class="background-image" >
+        <img src="./assets/hotels/{{hotel.image}}">
+
+      </div>
+
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-4 info">
+      <h2>{{hotel.name}}</h2>
+      <span  *ngFor="let number of countStar(hotel.stars)" class="icon-star"></span>
+      <div class="additional" *ngIf="hotel.amenities.length > 0">
+        <span *ngFor="let amenitie of hotel.amenities" class="icon-{{amenitie}}"></span>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-4 bg-price">
+      <p>Precio por habitación</p>
+      <div class="box-price">
+        <span class="currency">ARS</span><span class="price">{{hotel.price}}</span>
+      </div>
+      <a mz-button class="app-btn">
+        Ver Hotel
+      </a>
+    </div>
+  </div>
+</div>

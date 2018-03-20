@@ -1,0 +1,14 @@
+<div class="container-fluid mg-t-40">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-4">
+      <app-filters></app-filters>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-8">
+      <app-loader *ngIf="showLoader"></app-loader>
+      <div  *ngIf="hotels.length == 0 && !showLoader">
+        <p class="result">Lo sentimos para esta busqueda no hay resultados, intenta nuevamente con otros datos</p>
+      </div>
+      <app-hotel *ngFor="let hotel of hotels" [hotel]="hotel"></app-hotel>
+    </div>
+  </div>
+</div>
