@@ -1,6 +1,6 @@
-# Aplicaci?n almundo.com
+# Aplicacion almundo.com
 
-La soluci?n propuesta para el problema planteado esta realizado con las siguientes tecnolog?as:
+La solucion propuesta para el problema planteado esta realizado con las siguientes tecnologias:
 
  - Api REST con NodeJS (Framework SailsJS).
  - Persistencia de Datos en PostgreSQL (Base de datos cloud ).
